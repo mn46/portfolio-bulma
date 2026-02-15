@@ -1,0 +1,11 @@
+@use "bulma/sass" with (
+  $family-primary: "Instrument Sans"
+);
+
+$family-headline: "Gloock";
+
+h1,
+h2,
+h3 {
+  font-family: $family-headline;
+}
