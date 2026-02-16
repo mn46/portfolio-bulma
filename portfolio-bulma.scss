@@ -1,11 +1,22 @@
-@use "bulma/sass" with (
-  $family-primary: "Instrument Sans"
-);
-
 $family-headline: "Gloock";
+$primary: #2c73d2;
+
+@use "bulma/sass" with (
+  $family-primary: "Instrument Sans",
+  $primary: $primary,
+  $blue: #c4dcff
+);
 
 h1,
 h2,
 h3 {
   font-family: $family-headline;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.nav-item > a {
+  mix-blend-mode: color-dodge;
 }
