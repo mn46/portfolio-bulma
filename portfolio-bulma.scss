@@ -1,10 +1,10 @@
 $family-headline: "Gloock";
 $primary: #2c73d2;
+$light-blue: #c4dcff;
 
 @use "bulma/sass" with (
   $family-primary: "Instrument Sans",
-  $primary: $primary,
-  $blue: #c4dcff
+  $primary: $primary
 );
 
 h1,
@@ -19,4 +19,38 @@ h3 {
 
 .nav-item > a {
   mix-blend-mode: color-dodge;
+}
+
+#home {
+  background-color: $light-blue;
+  overflow: hidden;
+}
+
+#follower {
+  width: 65vw;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  filter: blur(5rem);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#home_content,
+nav,
+#arrow {
+  z-index: 1;
+}
+
+#arrow:hover {
+  animation: move-down 300ms ease-out forwards;
+}
+
+@keyframes move-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50%);
+  }
 }
