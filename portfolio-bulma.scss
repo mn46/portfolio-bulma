@@ -4,7 +4,9 @@ $light-blue: #c4dcff;
 
 @use "bulma/sass" with (
   $family-primary: "Instrument Sans",
-  $primary: $primary
+  $primary: $primary,
+  $navbar-background-color: transparent,
+  $navbar-height: 0
 );
 
 h1,
@@ -13,12 +15,8 @@ h3 {
   font-family: $family-headline;
 }
 
-.navbar {
-  background-color: transparent !important;
-}
-
-.nav-item > a {
-  mix-blend-mode: color-dodge;
+.navbar a {
+  color: $primary;
 }
 
 #home {

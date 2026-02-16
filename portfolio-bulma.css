@@ -7149,14 +7149,14 @@ button.dropdown-item.is-selected {
 }
 
 :root {
-  --bulma-navbar-height: 3.25rem;
+  --bulma-navbar-height: 0;
 }
 
 .navbar {
   --bulma-navbar-h: var(--bulma-scheme-h);
   --bulma-navbar-s: var(--bulma-scheme-s);
   --bulma-navbar-l: var(--bulma-scheme-main-l);
-  --bulma-navbar-background-color: var(--bulma-scheme-main);
+  --bulma-navbar-background-color: transparent;
   --bulma-navbar-box-shadow-size: 0 0.125em 0 0;
   --bulma-navbar-box-shadow-color: var(--bulma-background);
   --bulma-navbar-padding-vertical: 1rem;
@@ -21566,12 +21566,8 @@ h3 {
   font-family: "Gloock";
 }
 
-.navbar {
-  background-color: transparent !important;
-}
-
-.nav-item > a {
-  mix-blend-mode: color-dodge;
+.navbar a {
+  color: #2c73d2;
 }
 
 #home {
