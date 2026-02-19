@@ -21632,6 +21632,12 @@ nav,
   background-image: linear-gradient(#2c73d2, #c4dcff);
 }
 
+#modal_technologies_container,
+#modal_description,
+#see_project {
+  padding: 1.5rem 3rem;
+}
+
 #project_link {
   text-decoration: underline;
 }
@@ -21651,6 +21657,11 @@ nav,
   .modal-content {
     height: 90vh;
     width: auto;
+  }
+  #modal_technologies_container,
+  #modal_description,
+  #see_project {
+    padding: 1.5rem;
   }
 }
 

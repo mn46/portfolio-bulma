@@ -82,6 +82,12 @@ nav,
   background-image: linear-gradient($primary, $light-blue);
 }
 
+#modal_technologies_container,
+#modal_description,
+#see_project {
+  padding: 1.5rem 3rem;
+}
+
 #project_link {
   text-decoration: underline;
 }
@@ -105,5 +111,11 @@ nav,
   .modal-content {
     height: 90vh;
     width: auto;
+  }
+
+  #modal_technologies_container,
+  #modal_description,
+  #see_project {
+    padding: 1.5rem;
   }
 }
