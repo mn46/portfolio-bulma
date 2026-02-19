@@ -6,20 +6,22 @@ $light-blue: #c4dcff;
   $family-primary: "Instrument Sans",
   $primary: $primary,
   $navbar-background-color: transparent,
-  $navbar-height: 0
+  $navbar-height: 0,
+  $modal-content-spacing-mobile: 0
 );
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: $family-headline;
 }
 
-h2 {
-  color: $primary;
-}
-
-.navbar a {
+h2,
+h3,
+#modal_technologies,
+#modal_description,
+#see_project,
+#about_me_text,
+a {
   color: $primary;
 }
 
@@ -63,6 +65,27 @@ nav,
   background-image: linear-gradient(transparent, $primary);
 }
 
+.button-overlay,
+.project-image {
+  pointer-events: none;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 0.8rem;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#modal_top_wrapper {
+  background-image: linear-gradient($primary, $light-blue);
+}
+
+#project_link {
+  text-decoration: underline;
+}
+
 // animation
 
 @keyframes move-down {
@@ -77,5 +100,10 @@ nav,
 @media screen and (max-width: 48rem) {
   .project-button {
     width: 100%;
+  }
+
+  .modal-content {
+    height: 90vh;
+    width: auto;
   }
 }

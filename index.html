@@ -65,7 +65,7 @@
       </section>
       <section id="about_me">
         <h2 class="is-size-3 has-text-centered my-6">About me</h2>
-        <div>
+        <div class="about_me_text">
           <p>
             My name is Marta. I am a front-end developer with aspiration to
             transfer to full-stack.
@@ -109,21 +109,35 @@
       </section>
 
       <!-- modal -->
-      <section id="modal" role="modal">
-        <div>
-          <button id="close_button">X</button>
-          <h2 id="modal_title"></h2>
-          <img id="modal_image" src="" />
-          <div>
-            <h3>Technologies used:</h3>
-            <p id="modal_technologies"></p>
+      <section id="modal" role="modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content p-0 mx-2 mx-0-desktop">
+          <div id="modal_top_wrapper">
+            <button id="close_button" class="has-text-white is-size-3 p-4">
+              X
+            </button>
+            <h2
+              id="modal_title"
+              class="is-size-3 has-text-centered has-text-white mb-6"
+            ></h2>
+            <img id="modal_image" src="" />
+            <div class="py-3 px-3 px-6-tablet">
+              <h3 class="has-text-weight-semibold">Technologies used:</h3>
+              <p id="modal_technologies" class="has-text-weight-semibold"></p>
+            </div>
           </div>
+          <p
+            id="modal_description"
+            class="py-3 px-3 px-6-tablet has-text-weight-semibold"
+          ></p>
+          <p
+            id="see_project"
+            class="py-3 px-3 px-6-tablet has-text-weight-semibold"
+          >
+            See the full project:
+            <span><a id="project_link" href="" target="_blank"></a></span>
+          </p>
         </div>
-        <p id="modal_description"></p>
-        <p>
-          See the full project:
-          <span><a id="project_link" href="" target="_blank"></a></span>
-        </p>
       </section>
     </main>
     <script src="script.js"></script>

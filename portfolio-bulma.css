@@ -7039,7 +7039,7 @@ button.dropdown-item.is-selected {
   --bulma-modal-background-background-color: hsla(var(--bulma-scheme-h), var(--bulma-scheme-s), var(--bulma-scheme-invert-l), 0.86);
   --bulma-modal-content-width: 40rem;
   --bulma-modal-content-margin-mobile: 1.25rem;
-  --bulma-modal-content-spacing-mobile: 10rem;
+  --bulma-modal-content-spacing-mobile: 0;
   --bulma-modal-content-spacing-tablet: 2.5rem;
   --bulma-modal-close-dimensions: 2.5rem;
   --bulma-modal-close-right: 1.25rem;
@@ -21561,16 +21561,17 @@ has-background-danger.is-hoverable:active {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: "Gloock";
 }
 
-h2 {
-  color: #2c73d2;
-}
-
-.navbar a {
+h2,
+h3,
+#modal_technologies,
+#modal_description,
+#see_project,
+#about_me_text,
+a {
   color: #2c73d2;
 }
 
@@ -21614,6 +21615,27 @@ nav,
   background-image: linear-gradient(transparent, #2c73d2);
 }
 
+.button-overlay,
+.project-image {
+  pointer-events: none;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 0.8rem;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#modal_top_wrapper {
+  background-image: linear-gradient(#2c73d2, #c4dcff);
+}
+
+#project_link {
+  text-decoration: underline;
+}
+
 @keyframes move-down {
   0% {
     transform: translateY(0);
@@ -21625,6 +21647,10 @@ nav,
 @media screen and (max-width: 48rem) {
   .project-button {
     width: 100%;
+  }
+  .modal-content {
+    height: 90vh;
+    width: auto;
   }
 }
 
