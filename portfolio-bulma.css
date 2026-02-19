@@ -21642,6 +21642,15 @@ nav,
   text-decoration: underline;
 }
 
+#about_me_text {
+  width: 50vw;
+  margin: 0 auto 5rem auto;
+}
+
+#about_me_text p {
+  margin-top: 1rem;
+}
+
 @keyframes move-down {
   0% {
     transform: translateY(0);
@@ -21662,6 +21671,9 @@ nav,
   #modal_description,
   #see_project {
     padding: 1.5rem;
+  }
+  #about_me_text {
+    width: 90vw;
   }
 }
 
