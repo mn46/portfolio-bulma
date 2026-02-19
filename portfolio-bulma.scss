@@ -35,7 +35,7 @@ a {
 }
 
 #follower {
-  width: 65vw;
+  width: 50vw;
   aspect-ratio: 1/1;
   border-radius: 100%;
   filter: blur(5rem);
@@ -97,7 +97,7 @@ nav,
 }
 
 #about_me_headline {
-  background-image: linear-gradient($light-blue, $primary);
+  background-image: linear-gradient($primary, $light-blue);
 }
 
 #about_me_text {
@@ -121,6 +121,11 @@ nav,
 }
 
 @media screen and (max-width: 48rem) {
+  #follower {
+    top: 0;
+    right: 0;
+  }
+
   .project-button {
     width: 100%;
   }
