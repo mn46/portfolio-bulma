@@ -21560,6 +21560,10 @@ has-background-danger.is-hoverable:active {
   pointer-events: all !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2 {
   font-family: "Gloock";
