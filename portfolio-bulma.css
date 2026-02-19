@@ -21642,6 +21642,10 @@ nav,
   text-decoration: underline;
 }
 
+#about_me_headline {
+  background-image: linear-gradient(#c4dcff, #2c73d2);
+}
+
 #about_me_text {
   width: 50vw;
   margin: 0 auto 5rem auto;
